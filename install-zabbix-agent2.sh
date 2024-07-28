@@ -22,6 +22,5 @@ sed -i 's/ServerActive=127.0.0.1/ServerActive=opns.fortlab.net/' /etc/zabbix/zab
 
 systemctl restart zabbix-agent2
 systemctl enable zabbix-agent2
-systemctl restart zabbix-agent2
-systemctl enable zabbix-agent2
+
 
