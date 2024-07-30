@@ -9,7 +9,7 @@ if [ -f /etc/os-release ]; then
         exit 1
 fi
 
-wget https://repo.zabbix.com/zabbix/6.0/${OS}/pool/main/z/zabbix-release/zabbix-release_6.0-5+${OS}${VERSION_ID}_all.deb
+wget https://repo.zabbix.com/zabbix/6.0/${OS}/pool/main/z/zabbix-release/zabbix-release_6.0-4+${OS}${VERSION_ID}_all.deb
 dpkg -i zabbix-release_6.0-5+${OS}${VERSION_ID}_all.deb
 apt update
 apt install -y zabbix-agent2 zabbix-agent2-plugin-*
