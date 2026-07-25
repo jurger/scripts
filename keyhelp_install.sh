@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget https://install.keyhelp.de/get_keyhelp.php -O install_keyhelp.sh
+wget https://install.keyhelp.de/install_keyhelp.sh -O install_keyhelp.sh
 CURRENT_FQDN=$(hostname -f 2>/dev/null)
 # Check if FQDN is non-empty and contains at least one dot
 if [ -z "$CURRENT_FQDN" ] || [[ "$CURRENT_FQDN" != *.* ]]; then
